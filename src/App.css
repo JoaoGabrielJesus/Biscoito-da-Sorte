@@ -10,6 +10,8 @@
   width: 300px;
   height: 300px;
   margin-top: 50px;
+  border: 1px dotted #333;
+  border-radius: 20px;
 }
 
 .textoFrase{
@@ -18,3 +20,29 @@
   text-align: center;
 
 }
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 100px;
+  background: rgb(150, 153, 102);
+ }
+ 
+ table {
+ /* basic */
+  background-color: #fff;
+  margin: 0 auto;
+  width: 200px;
+  padding: 100px;
+  text-align: center;
+ /* border-radius */
+  border-radius: 20px;
+ /* box-shadow */
+  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+  border-collapse: collapse;
+ }
+ 
+ table td{
+   color: white;
+ }
+ 
+

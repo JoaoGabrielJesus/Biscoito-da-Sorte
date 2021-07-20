@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import imagemBiscoito from "./assets/biscoito.jpg"
+import imagemBiscoitoQuebrado from "./assets/biscoitoquebrado.jpg"
 import './App.css'
 
 class App extends Component{
@@ -7,10 +8,9 @@ class App extends Component{
   constructor(props){
     super(props);
     this.state = {
-      textoFrase:''
-    };
-
-    this.quebraBiscoito = this.quebraBiscoito.bind(this);
+      textoFrase:'',
+      botaoClicado: false,
+    };  
 
     this.frases = ['Siga os bons e aprenda com eles.', 
     'O bom-senso vale mais do que muito conhecimento.', 
@@ -26,14 +26,18 @@ class App extends Component{
     let numeroAleatorio = Math.floor(Math.random() * this.frases.length);
     state.textoFrase = '" '+this.frases[numeroAleatorio] +' "';
     this.setState(state);
+    this.setState({botaoClicado: !this.state.botaoClicado})
   }
+
+
 
   render(){
     return(
       <div className="container">
         <img src={imagemBiscoito} className="img" />
-        <Botao nome="Abrir biscoito" acaoBtn={this.quebraBiscoito}/>        
+        <Botao nome="Abrir Biscoito" acaoBtn={this.quebraBiscoito}/>        
         <h3 className="textoFrase">{this.state.textoFrase}</h3>
+        
       </div>
     );
   }
