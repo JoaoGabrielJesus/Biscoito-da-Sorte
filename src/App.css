@@ -24,7 +24,7 @@
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 100px;
-  background: rgb(150, 153, 102);
+  background: rgb(98, 128, 141);
  }
  
  table {
@@ -44,5 +44,6 @@ body {
  table td{
    color: white;
  }
+ 
  
 
